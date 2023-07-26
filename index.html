@@ -6,7 +6,8 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Jendoubi Hafedh Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="images/portfolio.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,8 +22,8 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<h1 id="title">Jendoubi Hafedh</h1>
+							<p>ESPRIT Student<br>Future Computer Engineer</p>
 						</div>
 
 					<!-- Nav -->
@@ -41,11 +42,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://twitter.com/HafedhJendoubi3" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/Hafedh.jendoubi.21/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/Hafedh-Jendoubi" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hafedh-jendoubi/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						</ul>
 
 				</div>
@@ -60,14 +60,12 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hi! I'm a <strong>Passionate</strong> ESPRIT student from Tunisia.<br /></h2>
+								<p>I make things look easy and I code beautifully simple things, and I love what I do.</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">Check My Portfolio</a>
 							</footer>
 
 						</div>
@@ -142,14 +140,9 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/pic08.png" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>I am Jendoubi Hafedh, and I am currently a college student. Throughout my academic journey, I have cultivated several remarkable qualities that have contributed to my success. First and foremost, I excel at working under pressure, as I thrive in dynamic and challenging environments. Additionally, I possess exceptional teamwork skills, understanding the importance of collaboration and effective communication in achieving shared goals. Another valuable attribute of mine is being a fast learner, as I embrace new concepts and technologies with enthusiasm. In terms of technical expertise, I specialize in website development, proficiently utilizing JavaScript, HTML, and PHP to create dynamic and interactive web applications. Furthermore, I am well-versed in database management, employing tools such as PhpMyAdmin and SQL to efficiently handle data. My programming skills extend to C, C++, QT, and SDL 1.2, enabling me to develop robust and efficient software solutions. Overall, I am a dedicated and versatile individual, ready to take on new challenges and contribute to the ever-evolving world of technology.</p>
 
 						</div>
 					</section>
@@ -162,26 +155,49 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>Thanks for taking the time to reach out.<br>How can I help you today?</p>
 
-							<form method="post" action="#">
+							<form method="post">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" id="email" placeholder="Email" /></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" id="message" placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<input id="btn" type="submit" value="Submit" />
 									</div>
 								</div>
 							</form>
 
 						</div>
 					</section>
+
+					<script
+  						type="text/javascript"
+  						src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+					</script>
+					<script type="text/javascript">
+  						(function () {
+    					emailjs.init('TGLZuzmUNYwJ4M99c');
+  						})();
+					</script>
+
+					<script>
+						var btn = document.getElementById("btn");
+						btn.addEventListener('click', function(e){
+							e.preventDefault()
+							var name = document.getElementById('name').value;
+							var email = document.getElementById('email').value;
+							var message = document.getElementById('message').value;
+
+							emailjs.send("service_fiezvni","template_qbdpuws",{
+								from_name: name,
+								email_id: email,
+								message: message,
+							});
+						})
+					</script>
 
 			</div>
 
