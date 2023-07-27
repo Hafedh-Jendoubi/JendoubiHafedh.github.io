@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body class="is-preload">
 
@@ -78,59 +79,70 @@
 							<header>
 								<h2>Portfolio</h2>
 							</header>
+							<table style="table-layout: fixed;">
+							<tr><td><div class="box-container">
+								<div class="box">
+									<center><div class="image">
+										<img src="images/web dev.jpg" alt="">
+									</div></center>
+									<div class="content">
+										<h3 align="center">Web Developement</h3>
+										<p><strong>	Skills: </strong>PhpMyAdmin · JavaScript · Team Leadership · PHP · HTML · SQL</p>
+										<center><a href="#" class="btn">read more</a></center>
+									</div>
+								</div>
+							</div></td>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
+							<td><div class="box-container">
+								<div class="box">
+									<center><div class="image">
+										<img src="images/desktop app.jpg" alt="">
+									</div></center>
+									<div class="content">
+										<h3 align="center">Desktop Application</h3>
+										<p><strong>Skills: </strong>Arduino · C++ (Programming Language) · Qt · SQL</p>
+										<center><a href="#" class="btn">read more</a></center>
+									</div>
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+							</div></td>
+							</tr>
+							<tr>
+								<td><div class="box-container">
+									<div class="box">
+										<center><div class="image">
+											<img src="images/2D Game.jpg" alt="">
+										</div></center>
+										<div class="content">
+											<h3 align="center">2D Game Developement</h3>
+											<p><strong>Skills: </strong>Arduino · C (Programming Language) · SDL</p>
+											<center><a href="#" class="btn">read more</a></center>
+										</div>
+									</div>
+								</div></td>
+							</tr>
+							</table>	
 
 						</div>
 					</section>
+
+					<script>
+
+						let loadMoreBtn = document.querySelector('#load-more');
+						let currentItem = 3;
+						
+						loadMoreBtn.onclick = () =>{
+						   let boxes = [...document.querySelectorAll('.container .box-container .box')];
+						   for (var i = currentItem; i < currentItem + 3; i++){
+							  boxes[i].style.display = 'inline-block';
+						   }
+						   currentItem += 3;
+						
+						   if(currentItem >= boxes.length){
+							  loadMoreBtn.style.display = 'none';
+						   }
+						}
+						
+						</script>
 
 				<!-- About Me -->
 					<section id="about" class="three">
@@ -140,9 +152,11 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.png" alt="" /></a>
+							<p align="left" style="margin-left: 50px;">A college student with remarkable qualities that contribute to his success.<br>
+							   Excels under pressure, thrives in dynamic environments, and possesses exceptional teamwork skills.<br>
+							   Fast learner, embracing new concepts and technologies with enthusiasm.</p>
 
-							<p>I am Jendoubi Hafedh, and I am currently a college student. Throughout my academic journey, I have cultivated several remarkable qualities that have contributed to my success. First and foremost, I excel at working under pressure, as I thrive in dynamic and challenging environments. Additionally, I possess exceptional teamwork skills, understanding the importance of collaboration and effective communication in achieving shared goals. Another valuable attribute of mine is being a fast learner, as I embrace new concepts and technologies with enthusiasm. In terms of technical expertise, I specialize in website development, proficiently utilizing JavaScript, HTML, and PHP to create dynamic and interactive web applications. Furthermore, I am well-versed in database management, employing tools such as PhpMyAdmin and SQL to efficiently handle data. My programming skills extend to C, C++, QT, and SDL 1.2, enabling me to develop robust and efficient software solutions. Overall, I am a dedicated and versatile individual, ready to take on new challenges and contribute to the ever-evolving world of technology.</p>
+							<img align="right" src="images/signature.png" alt="">
 
 						</div>
 					</section>
