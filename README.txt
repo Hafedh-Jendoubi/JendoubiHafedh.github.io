@@ -19,7 +19,6 @@ images you can use for pretty much whatever.
 
 (* = Not included)
 
-AJ
 aj@lkn.io | @ajlkn
 
 PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
